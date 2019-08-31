@@ -8,3 +8,6 @@
  Website: meadowsdemadesigns.com
  
  Part of Techdegree Learning
+
+ * Added Smart Mixins
+ * Added if/else Statements for Media Querie Mixins
