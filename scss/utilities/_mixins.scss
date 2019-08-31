@@ -50,6 +50,7 @@
 $value: map-get($breakpoints, $break);
 $sm: map-get($breakpoints, 'sm');  
 
+ 
   @if $value < $sm {
     @media (max-width: $value) {
       @content;
@@ -59,5 +60,14 @@ $sm: map-get($breakpoints, 'sm');
     @media (min-width: $value) {
       @content;
     } 
+  }
+}
+
+// theme mixin
+@mixin themes($map) {
+  @each $theme, $color in $map {
+    &-#{$theme} {
+      color: $color;
+    }
   }
 }
