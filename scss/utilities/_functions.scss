@@ -1,0 +1,14 @@
+// ======================================
+//  Functions
+// ======================================
+
+@function px-to-pc($target, $context: $max-width) {
+    @return ($target / $context) * 100%;
+}
+
+// Function to calculate automatically the gutter between items
+@function per-line($items) {
+    $g-pct: px-to-pc($gutter) * 2;
+    $g-total: $items * $g-pct;
+    @return (100% / $items) - $g-total;
+}
