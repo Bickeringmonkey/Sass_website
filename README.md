@@ -14,3 +14,4 @@
 
  * Added Smart Mixins
  * Added if/else Statements for Media Querie Mixins
+ * implimented Sass Maps using get-map() for the breakpoints
